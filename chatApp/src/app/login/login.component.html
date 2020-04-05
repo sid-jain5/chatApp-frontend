@@ -2,7 +2,7 @@
 	<div class="col-md-9">
 		<div class="card">
 			<div class="card-header bg bg-primary">
-				Login
+			<h5>Login</h5>	
 			</div>
 			<div class="card-body">
 				<form #loginForm="ngForm">
@@ -28,11 +28,11 @@
 						<span class="col-sm-4 col-4"></span>
 						<div class="col-sm-3 col-3">
 							<button (click)="onSubmit()" class="btn btn-primary"
-								[disabled]="!loginForm.form.valid">Login</button>
+								[disabled]="!loginForm.form.valid">Login</button></div>
+						<div>
+							<button (click)="register()" class="btn btn-primary">Register</button>
 						</div>
-						<span class="col-sm-5 col-5" style="top:8px">
-							<a [routerLink]="['/welcome']" style="color:#337ab7;text-decoration: underline;">Cancel</a>
-						</span>
+
 					</div>
 				</form>
 			</div>
